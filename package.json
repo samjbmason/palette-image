@@ -10,7 +10,8 @@
   "dependencies": {
     "get-image-colors": "^1.8.1",
     "image-type": "^3.0.0",
-    "micro": "^9.3.3"
+    "micro": "^9.3.3",
+    "micro-cors": "^0.1.1"
   },
   "devDependencies": {
     "micro-dev": "^3.0.0"
