@@ -6,12 +6,11 @@ const imageType = require("image-type")
 const cors = microCors()
 
 module.exports = cors(async (req, res) => {
-  console.log(req.method)
   if (req.method !== "POST") {
     return send(res, 200)
   }
   const buf = await buffer(req)
   const type = imageType(buf)
-  const colors = await getColors(buf, type.mime)
+  const colors = await getColors(buf, type.mime, 11)
   send(res, 200, colors.map(c => c.hex()))
 })
