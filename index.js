@@ -1,6 +1,6 @@
 const { buffer, send } = require("micro")
 const microCors = require("micro-cors")
-const getColors = require("get-image-colors")
+const getColors = require("get-image-colors.samjbmason")
 const imageType = require("image-type")
 
 const cors = microCors()
